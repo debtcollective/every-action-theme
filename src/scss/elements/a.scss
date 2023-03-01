@@ -1,0 +1,7 @@
+a {
+  color: $jade-dark !important;
+  &:hover, &:focus, &:active {
+		text-decoration: underline;
+		color: $gray-dark !important;
+	}
+}

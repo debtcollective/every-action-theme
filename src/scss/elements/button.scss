@@ -1,0 +1,17 @@
+button, input {
+  &[type="submit"], &.btn {
+    background-color: $jade-dark !important;
+    color: $white;
+    border: none !important;
+    border-radius: 6px;
+    font-weight: 900 !important;
+
+    &:hover, &:focus {
+      background-color: $jade !important;
+      box-shadow: 0px 0px 4px $jade-darker;
+      transition-property: all;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+    }
+  }
+}

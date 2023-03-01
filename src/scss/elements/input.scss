@@ -1,0 +1,66 @@
+input {
+	&[type="text"],
+	&[type="email"],
+	&[type="tel"],
+	&[type="date"] {
+		box-sizing: border-box;
+		background-color: $jade-bg !important;
+		border: 1px solid $green-border !important;
+		border-radius: 6px;
+		line-height: 1.2;
+		height: 3.2rem;
+		width: 100%;
+		padding: 0 1rem;
+		&:focus {
+			outline: 5px auto Highlight !important;
+			outline: 5px auto -webkit-focus-ring-color !important;
+		}
+	}
+}
+
+.oa-input-label {
+	color: $text;
+}
+
+input[type="checkbox"] {
+	&:checked, &:active {
+		+ span::before {
+			background-color: $jade-dark !important;
+			border-color: $jade-dark !important;
+		}
+	}
+	&:focus, &:hover {
+		+ span:before {
+			border-color: $jade-dark !important;
+			box-shadow: 0 0 4px $jade-dark !important;
+		}
+	}
+	&:focus + span {
+		outline: 5px auto Highlight !important;
+		outline: 5px auto -webkit-focus-ring-color !important;
+	}
+}
+
+.select__control {
+	background-color: $jade-bg !important;
+	border: 1px solid $green-border !important;
+	&:focus-within {
+		outline: 5px auto Highlight !important;
+		outline: 5px auto -webkit-focus-ring-color !important;
+	}
+	input[type="text"] {
+		background-color: transparent !important;
+		border: none !important;
+		&:focus {
+			opacity: 0 !important;
+		}
+	}
+}
+
+.iti--container { // phone input country select
+	width: 28rem;
+	max-width: 80vw;
+	.iti__country-list {
+		font-family: Arial, sans-serif;
+	}
+}

@@ -1,0 +1,123 @@
+.oa-ssp-app-container {
+  padding-top: 0;
+  #pageHeadline > div > h1:first-child {
+    text-align: center !important;
+  }
+  .navigation {
+    .nav-tabs {
+      li {
+        &.active a {
+          color: $jade-dark !important;
+          border-bottom: solid 2px $jade-dark !important;
+          &:hover, &:focus, &:active {
+            color: $jade-dark !important;
+            border-bottom: solid 2px $jade-dark !important;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: $gray-dark !important;
+          &:hover, &:focus, &:active {
+            color: $jade-dark !important;
+            border-bottom-color: $jade-dark !important;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .ssp-nav-dropdown { // window less than 576px width
+      .btn-dropdown {
+        border: 1px solid $jade;
+        &:focus {
+          box-shadow: 0 0 4px 0 $jade;
+          outline: 5px auto Highlight;
+          outline: 5px auto -webkit-focus-ring-color;
+        }
+      }
+      &.open {
+        .btn-dropdown {
+          border: none;
+          &::after {
+            position: relative;
+            padding: 0.25rem 0.5rem;
+            z-index: 9999;
+          }
+          &:focus {
+            outline: none;
+            &::after {
+              outline: 5px auto Highlight;
+              outline: 5px auto -webkit-focus-ring-color;
+            }
+          }
+        }
+      }
+      .dropdown-menu {
+        border-color: $jade-dark;
+        .dropdown-nav-list {
+          border: none;
+          .active {
+            background-color: transparent;
+            a {
+              border-left: 4px solid $jade;
+              padding-left: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ssp-tab-contents {
+    .ssp-home-tab, .card {
+      box-shadow: 1px 1px 4px $gray-mid !important;
+    }
+  }
+
+  .contribution-history {
+    .paginate-container {
+      .paginate-element,
+      .previous, .next,
+      .first-link, .last-link {
+        padding: 0;
+        background-color: transparent;
+        a {
+          padding: 0.25rem;
+          &:focus {
+            outline: 5px auto Highlight;
+            outline: 5px auto -webkit-focus-ring-color;
+          }
+        }
+        &.selected a {
+          border-bottom: solid 2px $jade-dark;
+          border-radius: 0;
+          &:hover, &:focus {
+            color: $jade-dark;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-info {
+    .other-address-inputs {
+      justify-content: space-between;
+    }
+    .phone-inputs {
+      .international-phone {
+        margin: 0 1rem 1rem 0;
+      }
+      .text-preferences-header {
+        display: block;
+      }
+    }
+  }
+}
+
+.oa-self-service-login-container {
+  // small screen left side of button is larger than container fix
+  .btn-at-primary{
+    margin-left: 10px; // to match margin-right applied by default
+    max-width: calc(100vw - 20px);
+  }
+}
