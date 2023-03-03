@@ -1,0 +1,5 @@
+// hide Event Roles radio btns from user (default Role will be selected) - remove if we use Roles in the future
+
+.EventRolesParent {
+	display: none !important
+}
