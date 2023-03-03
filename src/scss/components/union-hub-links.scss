@@ -1,0 +1,50 @@
+.union-hub-links {
+  display: grid;
+  grid-gap: 1rem;
+  a.union-link {
+    padding: 1rem;
+    background-color: $red;
+    letter-spacing: -0.5px;
+    border-radius: 1.25rem;
+    border: double 8px $white;
+    text-decoration: none;
+    &:hover, &:focus {
+      background-color: $red-darker;
+      h4 {
+        text-decoration: underline $white 2px;
+      }
+    }
+    &:focus {
+			outline: 5px auto Highlight !important;
+			outline: 5px auto -webkit-focus-ring-color !important;
+		}
+    h4 {
+      min-width: 12rem;
+      font-size: 1.25rem;
+      font-weight: 900;
+      margin: 0;
+      color: $white;
+      border-bottom: solid 1px $white;
+    }
+    p {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: $white;
+      text-decoration: none;
+    }
+
+    @media (min-width: 720px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.375rem 1.25rem;
+      h4 {
+        width: 25%;
+        border-bottom: none;
+      }
+      p {
+        width: 66.67%;
+      }
+    }
+  }
+}
