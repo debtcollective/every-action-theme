@@ -6,7 +6,8 @@ module.exports = [
 	{
 		mode: process.env.NODE_ENV,
 		entry: {
-			'ea-theme': './src/scss/index.scss'
+			'online-actions': './src/scss/online-actions.scss',
+			'targeted-email': './src/scss/targeted-email.scss'
 		},
 		output: {},
 		module: {
