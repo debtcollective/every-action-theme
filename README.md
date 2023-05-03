@@ -1,3 +1,3 @@
-# every-action-theme
+# EveryAction Themes
 
 Styling for our EveryAction Themes
